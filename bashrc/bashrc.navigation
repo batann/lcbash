@@ -420,4 +420,4 @@ declare -A selected_files  # Associative array to store selected files
     done
 }
 
-#}}}}}}
+#}}}
