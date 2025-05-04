@@ -1,4 +1,3 @@
-# lcbash
 # `lcbash` – A Modular Bash Function and Utility Library
 
 ## Overview
