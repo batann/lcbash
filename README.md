@@ -97,14 +97,21 @@ function! UpdateFoldMarkersEnd()
 endfunction
 ```
 
+---
 
-### 'Dot files'
+### Dot files
 
-### 'Bashrc files'
 
-### 'Functions'
+---
 
-### 'Misc'
+### Bashrc files
+
+
+---
+
+### Functions
+
+### Misc
 
 ---
 
