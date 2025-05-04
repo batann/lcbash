@@ -50,7 +50,7 @@ The project is organized into several directories:
     3 = >
     to maintain a consistent layout Space [ ] replaces each [>]*</sub>
 
-  vim auto command
+#### vim auto command
 ###### positionning fold start
 ```
   autocmd BufWritePre * call UpdateFoldMarkersStart()
