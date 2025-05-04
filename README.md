@@ -39,16 +39,16 @@ The project is organized into several directories:
 
 
 
- **markers with script relative line numbers indicate the position
+  <sub> *markers with script relative line numbers indicate the position
     of either Fold-beginning or Fold-ending within the current buffer and are
     detected,added and/or edited according to current positionby vim autocommand
-    on :w execution.*
+    on :w execution.*</sub>
 
-  **Folds Levels are from 1-3 are indicated by >>>
+  <sub> *Folds Levels are from 1-3 are indicated by >>>
     1 = >>>
     2 = >>
     3 = >
-    to maintain a consistent layout Space [ ] replaces each [>]*
+    to maintain a consistent layout Space [ ] replaces each [>]*</sub>
 
   vim auto command
 ###### positionning fold start
