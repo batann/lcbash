@@ -199,7 +199,62 @@ endfunction
 └── tools
     └── fold_find.sh
 ```
-
+```
+├── home                                     	│     ├── bashrc
+│   └── batan                               	│     │   ├── bash_logout
+│       ├── .config                          	│     │   ├── bash_profile
+│       │   ├── dunst                        	│     │   ├── bashrc
+│       │   ├── i3                           	│     │   ├── bashrc.aliases
+│       │   ├── kitty                        	│     │   ├── bashrc.batan
+│       │   ├── lc-bashrc                    	│     │   ├── bashrc.finish
+│       │   ├── lc-clipboard                 	│     │   ├── BASHRC.FIRST.LC
+│       │   ├── lc-fm                        	│     │   └── bashrc.navigation
+│       │   ├── lc-gutenberg                 	│     ├── dotfiles
+│       │   ├── lc-mashpodder                	│     │   ├── fzf.bash
+│       │   ├── lc-ranger                    	│     │   ├── inputrc
+│       │   ├── lists                        	│     │   ├── lc-cd
+│       │   ├── menu-100-scripts             	│     │   ├── lc-sign
+│       │   ├── picom                        	│     │   ├── megarc
+│       │   ├── polybar                     	│     │   ├── music.kdl
+│       │   ├── ranger                      	│     │   ├── oolite-starter.conf
+│       │   ├── rofi                         	│     │   ├── profile
+│       │   ├── simple_menu                 	│     │   ├── rss.opml
+│       │   ├── tmux                        	│     │   ├── taskrc
+│       │   ├── vim                          	│     │   ├── tkremind
+│       │   ├── vimwiki                      	│     │   ├── tmux.conf
+│       │   ├── YAD                          	│     │   ├── vimrc
+│       │   └── yt-dlp                       	│     │   ├── Xauthority
+│       ├── lcbash                           	│     │   ├── xboardrc
+│       │   ├── bashrc                       	│     │   ├── Xdefaults
+│       │   ├── dotfiles                     	│     │   ├── xinitrc
+│       │   ├── functions                    	│     │   └── Xresources
+│       │   ├── images                      	│     ├── functions
+│       │   ├── misc                         	│     ├── images
+│       │   └── tools                        	│     │   └── logo.png
+│       ├── .task                            	│     ├── lcbash.wiki
+│       │   ├── assets                       	│     ├── misc
+│       │   ├── hooks                        	│     ├── README.md
+│       │   └── notes                        	│     └── tools
+│       └── .vim                             	│         └── fold_find.sh
+│           ├── pack                         	│
+│           │   └── plugins                  	│
+│           │       └── start                	│
+│           │           ├── moonfly.nvim     	│
+│           │           ├── vim-taskwarrior  	│
+│           │           └── vimwiki          	│
+│           └── templates                    	│
+└── media                                    	│
+    └── batan                                	│
+        ├── 100                              	│
+        ├── 200                              	│
+        ├── 300                             	│
+        ├── 400                              	│
+        ├── 500                              	│
+        ├── 600                              	│
+        ├── 700                              	│
+        ├── 800                              	│
+        └── 900                               |
+```
 
 ---
 
