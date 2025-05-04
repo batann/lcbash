@@ -1,5 +1,4 @@
 # vim:fileencoding=utf-8:foldmethod=marker
-#PROMPT_COMMAND="history|tail -n1 >> /home/batan/.config/lists/commands.txt"
 get_coursor_position() {
     # Request cursor position
     echo -ne "\033[6n"
@@ -755,36 +754,6 @@ reg9() {
 #}}} <#755
 #}}}  <#756
 #{{{ >>>   lc-cd >#757
-
-
-#lc() {
-#    local dest_dir=$(cat /home/batan/.lc-cd | fzf)
-#    [[ -z "$dest_dir" ]] && return  # Exit if no selection
-#
-#    local session_name=$(basename "$dest_dir")
-#
-#    if tmux has-session -t "$session_name" 2>/dev/null; then
-#        tmux attach-session -t "$session_name"
-#    else
-#        tmux new-session -d -s "$session_name" -c "$dest_dir"
-#        tmux send-keys -t "$session_name" "clear; ls" Enter
-#
-#        # Wait for a moment to allow command execution
-#        sleep 1  
-#
-#        # Capture the working directory inside tmux
-#        local current_dir=$(tmux display-message -p -t "$session_name" '#{pane_current_path}')
-#
-#        # If the directory inside tmux is different from the original one, detach
-#        if [[ "$current_dir" != "$dest_dir" ]]; then
-#            tmux detach -s "$session_name"
-#        else
-#            tmux attach-session -t "$session_name"
-#        fi
-#    fi
-#}
-
-
 
 lc(){
     local dest_dir=$(cat /home/batan/.lc-cd| fzf )
