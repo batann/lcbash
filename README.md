@@ -27,32 +27,34 @@ The project is organized into several directories:
 ## Project Imperatives
 
 ### 'lc-code-folding'
-- Folds 
+<u>I Folds</u> 
 
-Folds-Level-1: #{{{ >>>   TITLE [>#N (marker and script relative line number)]32
-               #}}} [<#N (marker and script relative line number)]33
+- Folds-Level-1: #{{{ >>>   TITLE [>#N (marker and script relative line number)]
+                 #}}} [<#N (marker and script relative line number)]
 
-Folds-Level-2: #{{{ >>    TITLE [>#N (marker and script relative line number)]35
-               #}}} [<#N (marker and script relative line number)]36
+- Folds-Level-2: #{{{ >>    TITLE [>#N (marker and script relative line number)]
+                 #}}} [<#N (marker and script relative line number)]
 
-Folds-Level-3: #{{{ >     TITLE [>#N (marker and script relative line number)]38
-               #}}} [<#N (marker and script relative line number)]39
+- Folds-Level-3: #{{{ >     TITLE [>#N (marker and script relative line number)]
+                 #}}} [<#N (marker and script relative line number)]
 
 
 
-    - markers with script relative line numbers indicate the position
-      of either Fold-beginning or Fold-ending within the current buffer and are
-      detected,added and/or edited according to current positionby vim autocommand
-      on :w execution.
+  - markers with script relative line numbers indicate the position
+    of either Fold-beginning or Fold-ending within the current buffer and are
+    detected,added and/or edited according to current positionby vim autocommand
+    on :w execution.
 
-    - Folds Levels are from 1-3 are indicated by >>>
-      1 = >>>
-      2 = >>
-      3 = >
-      to maintain a consistent layout Space [ ] replaces each [>]
+  - Folds Levels are from 1-3 are indicated by >>>
+    1 = >>>
+    2 = >>
+    3 = >
+    to maintain a consistent layout Space [ ] replaces each [>]
 
-  vim auto command`
-   autocmd BufWritePre * call UpdateFoldMarkersStart()
+  vim auto command
+  positionning fold start
+  ```
+autocmd BufWritePre * call UpdateFoldMarkersStart()
 function! UpdateFoldMarkersStart()
     let l:save_cursor = getpos(".")
     let l:lines = getline(1, '$')
@@ -71,8 +73,9 @@ function! UpdateFoldMarkersStart()
     endfor
     call setpos('.', l:save_cursor)
 endfunction
-
-
+```
+positioning fold end
+```
     autocmd BufWritePre * call UpdateFoldMarkersEnd()
 function! UpdateFoldMarkersEnd()
     let l:save_cursor = getpos(".")
@@ -92,7 +95,7 @@ function! UpdateFoldMarkersEnd()
     endfor
     call setpos('.', l:save_cursor)
 endfunction
-  `
+```
 
 
 ### ''
