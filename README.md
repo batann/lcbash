@@ -26,8 +26,7 @@ The project is organized into several directories:
 
 ## Project Imperatives
 
-### 'lc-code-folding'
-<u>I Folds</u> 
+### LC-Folds
 
 - Folds-Level-1: #{{{ >>>   TITLE [>#N (marker and script relative line number)]
                  #}}} [<#N (marker and script relative line number)]
@@ -53,8 +52,8 @@ The project is organized into several directories:
 
   vim auto command
   positionning fold start
-  ```
-autocmd BufWritePre * call UpdateFoldMarkersStart()
+`
+  autocmd BufWritePre * call UpdateFoldMarkersStart()
 function! UpdateFoldMarkersStart()
     let l:save_cursor = getpos(".")
     let l:lines = getline(1, '$')
@@ -73,7 +72,8 @@ function! UpdateFoldMarkersStart()
     endfor
     call setpos('.', l:save_cursor)
 endfunction
-```
+`
+
 positioning fold end
 ```
     autocmd BufWritePre * call UpdateFoldMarkersEnd()
