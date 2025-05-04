@@ -39,19 +39,19 @@ The project is organized into several directories:
 
 
 
-  - markers with script relative line numbers indicate the position
+ **markers with script relative line numbers indicate the position
     of either Fold-beginning or Fold-ending within the current buffer and are
     detected,added and/or edited according to current positionby vim autocommand
-    on :w execution.
+    on :w execution.*
 
-  - Folds Levels are from 1-3 are indicated by >>>
+  **Folds Levels are from 1-3 are indicated by >>>
     1 = >>>
     2 = >>
     3 = >
-    to maintain a consistent layout Space [ ] replaces each [ greater then ]
+    to maintain a consistent layout Space [ ] replaces each [>]*
 
   vim auto command
-  positionning fold start
+###### positionning fold start
 ```
   autocmd BufWritePre * call UpdateFoldMarkersStart()
 function! UpdateFoldMarkersStart()
@@ -74,7 +74,7 @@ function! UpdateFoldMarkersStart()
 endfunction
 ```
 
-positioning fold end
+###### positioning fold end
 ```
     autocmd BufWritePre * call UpdateFoldMarkersEnd()
 function! UpdateFoldMarkersEnd()
