@@ -28,13 +28,13 @@ The project is organized into several directories:
 
 ### LC-Folds
 
-- Folds-Level-1: #{{{ >>>   TITLE [>#N (marker and script relative line number)]
+- Folds-Level-1: #{{{ >>>   TITLE [>#N (marker and script relative line number)] \
                  #}}} [<#N (marker and script relative line number)]
 
-- Folds-Level-2: #{{{ >>    TITLE [>#N (marker and script relative line number)]
+- Folds-Level-2: #{{{ >>    TITLE [>#N (marker and script relative line number)] \
                  #}}} [<#N (marker and script relative line number)]
 
-- Folds-Level-3: #{{{ >     TITLE [>#N (marker and script relative line number)]
+- Folds-Level-3: #{{{ >     TITLE [>#N (marker and script relative line number)] \
                  #}}} [<#N (marker and script relative line number)]
 
 
@@ -48,11 +48,11 @@ The project is organized into several directories:
     1 = >>>
     2 = >>
     3 = >
-    to maintain a consistent layout Space [ ] replaces each [>]
+    to maintain a consistent layout Space [ ] replaces each [ greater then ]
 
   vim auto command
   positionning fold start
-`
+```
   autocmd BufWritePre * call UpdateFoldMarkersStart()
 function! UpdateFoldMarkersStart()
     let l:save_cursor = getpos(".")
@@ -72,7 +72,7 @@ function! UpdateFoldMarkersStart()
     endfor
     call setpos('.', l:save_cursor)
 endfunction
-`
+```
 
 positioning fold end
 ```
