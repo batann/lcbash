@@ -1,5 +1,15 @@
 # `lcbash` – A Modular Bash Function and Utility Library
 
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/batann/lcbash/images/logo.png">
+    <img src="images/logo.png" alt="Logo" width="720" height="720">
+  </a>
+
+<h3 align="center">LC-Linux</h3>
+
+
 ## Overview
 
 `lcbash` is a modular and scalable collection of Bash utilities, functions, and scripts. It is designed for ease of use, maintainability, and efficient function sourcing. The project is split into manageable components, ensuring that each function can be sourced dynamically, and each file has a clear purpose.
@@ -100,18 +110,22 @@ endfunction
 ---
 
 ### Dot files
+ - Path: $HOME/lcbash/dotfiles
 
 
 ---
 
 ### Bashrc files
+ - Path: $HOME/lcbash/bashrc
 
 
 ---
 
 ### Functions
+ - Path: $HOME/lcbash/functions/
 
 ### Misc
+ - Path: $HOME/lcbash/Misc
 
 ---
 
@@ -142,6 +156,12 @@ endfunction
 - **`fold_find.sh`**:          Find the start and end lines of a function fold.
 - **`fold_extract.sh`**:       Extract and source a function by name.
 - **`fold_validate.sh`**:      Validate that all folds are correctly matched with start and end markers.
+
+---
+
+## Project Directory Structure
+
+
 
 ---
 
