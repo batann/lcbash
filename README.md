@@ -98,9 +98,13 @@ endfunction
 ```
 
 
-### ''
+### 'Dot files'
 
-### ''
+### 'Bashrc files'
+
+### 'Functions'
+
+### 'Misc'
 
 ---
 
