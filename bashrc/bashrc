@@ -94,9 +94,6 @@ alias la='ls -A'
 alias l='lc'
 alias ld='ls -d */'
 
-
-
-
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -130,7 +127,6 @@ xterm*|rxvt*)
     ;;
 esac
 
-
 # Created by `pipx` on 2023-10-08 03:59:30
 export PATH="$PATH:/home/batan/.local/bin"
 source /home/batan/.bashrc.aliases
@@ -139,17 +135,5 @@ source /home/batan/.bashrc.navigation
 alias ssb='sudo bash'
 ddd=$(date +%j)
 
-. "$HOME/.cargo/env"
-
-testtest() {
-if [[ $0 == "mkdir" ]]; 
-then 
-    echo "aaa" 
-    echo "aaa" >> testtest
- sleep 2 
-    fi
-}
-#PROMPT_COMMAND='cols=$(tput u7 | cut -d";" -f2)'
-#PROMPT_COMMAND='cols=$(tput u7 | cut -d";" -f2); echo "Cursor position: $cols";'
 PROMPT_COMMAND="history|tail -n1|cut -c8-500 >> /home/batan/.config/lists/commands.txt && pwd >> /home/batan/.config/lists/directory.list"
 
