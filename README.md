@@ -7,7 +7,7 @@
     <img src="images/logo.png" alt="Logo" width="720" height="720">
   </a>
 
-<h3 align="center">LC-Linux</h3>
+
 
 
 ## Overview
