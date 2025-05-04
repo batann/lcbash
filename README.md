@@ -161,44 +161,7 @@ endfunction
 ---
 
 ## Project Directory Structure
-```
-├── bashrc
-│   ├── bash_logout
-│   ├── bash_profile
-│   ├── bashrc
-│   ├── bashrc.aliases
-│   ├── bashrc.batan
-│   ├── bashrc.finish
-│   ├── BASHRC.FIRST.LC
-│   └── bashrc.navigation
-├── dotfiles
-│   ├── fzf.bash
-│   ├── inputrc
-│   ├── lc-cd
-│   ├── lc-sign
-│   ├── megarc
-│   ├── music.kdl
-│   ├── oolite-starter.conf
-│   ├── profile
-│   ├── rss.opml
-│   ├── taskrc
-│   ├── tkremind
-│   ├── tmux.conf
-│   ├── vimrc
-│   ├── Xauthority
-│   ├── xboardrc
-│   ├── Xdefaults
-│   ├── xinitrc
-│   └── Xresources
-├── functions
-├── images
-│   └── logo.png
-├── lcbash.wiki
-├── misc
-├── README.md
-└── tools
-    └── fold_find.sh
-```
+
 ```
 ├── home                                     	│     ├── bashrc
 │   └── batan                               	│     │   ├── bash_logout
