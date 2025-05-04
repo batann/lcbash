@@ -6,6 +6,7 @@
   <a href="https://github.com/batann/lcbash/images/logo.png">
     <img src="images/logo.png" alt="Logo" width="720" height="720">
   </a>
+</div>
 
 
 
